@@ -1,0 +1,223 @@
+footer {
+    .contact {
+		background-color: $black;
+		padding: 30px 0px;
+
+		@media screen and (max-width: $medium) {
+			padding: 50px 0px;
+		}
+
+		.container-fluid {
+			margin: 0px auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@media screen and (max-width: $medium) {
+				display: block;
+				text-align: center;
+			}
+		}
+		&__bulldog {
+			margin-right: 30px;
+
+			@media screen and (max-width: $medium) {
+				margin-right: 0px;
+				margin-bottom: 30px;
+			}
+			@media screen and (max-width: $small) {
+				margin-bottom: 20px;
+			}
+			img {
+				width: 36px;
+			}
+		}
+		&__text {
+			color: $white;
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 2px;
+			font-weight: 800;
+			text-transform: uppercase;
+			margin: 0px 30px 0px 0px;
+
+			@media screen and (max-width: $medium) {
+				font-size: 12px;
+				margin: 0px 0px 30px;
+			}
+			@media screen and (max-width: $small) {
+				margin: 0px 0px 20px;
+			}
+		}
+		&__link {
+			color: $yellow;
+
+			&:after {
+				background-color: $yellow;
+			}
+		}
+	}
+	.footer-main {
+		padding: 70px 0px;
+
+		@media screen and (max-width: $medium) {
+			padding: 0px 0px 30px;
+		}
+		.row {
+			@media screen and (max-width: $small) {
+				padding-left: 10%;
+			}
+			&:last-of-type {
+				@media screen and (max-width: $medium) {
+					flex-direction: column-reverse;
+				}
+			}
+		}
+		.city {
+			display: block;
+			opacity: .25;
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $medium) {
+				margin-bottom: 20px;
+			}
+			@media screen and (max-width: $small) {
+				margin-bottom: 10px;
+			}
+			.star {
+				position: relative;
+				top: -2px;
+			}
+		}
+		.address {
+			margin-bottom: 0px;
+		}
+		.col-lg-2 {
+			@media screen and (max-width: $large) {
+				margin-bottom: 50px;
+			}
+			@media screen and (max-width: $medium) {
+				border-bottom: 1px solid $gray;
+				padding: 50px 0px;
+				margin-bottom: 0px;
+			}
+			@media screen and (max-width: $small) {
+				padding: 50px 0px;
+			}
+		}
+		.col-md-6 {
+			@media screen and (max-width: $medium) {
+				padding: 50px 0px 30px;
+				border-bottom: none;
+			}
+			@media screen and (max-width: $small) {
+				padding: 30px 0px 10px;
+			}
+		}
+		.footer-social {
+			margin-bottom: 32px;
+			display: flex;
+
+			@media screen and (max-width: $small) {
+				margin-bottom: 20px;
+			}
+			a {
+				display: block;
+				margin-right: 30px;
+				transform: scale(1);
+				transition: .2s ease-in-out;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+				&:last-of-type {
+					margin-right: 0px;
+				}
+			}
+		}
+		.contact-methods {
+			span {
+				margin-right: 15px;
+			}
+			a {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.footer-icons {
+			display: flex;
+			flex-wrap: wrap;
+			align-self: flex-end;
+			justify-content: flex-end;
+
+			@media screen and (max-width: $large) {
+				margin-bottom: -20px;
+			}
+			@media screen and (max-width: $medium) {
+				align-self: flex-start;
+				justify-content: flex-start;
+				margin-bottom: 30px;
+				margin-top: -20px;
+				padding: 0px;
+			}
+			@media screen and (max-width: $small) {
+				margin-bottom: 10px;
+				margin-top: 0px;
+			}
+			&__icon {
+				margin-right: 30px;
+
+				@media screen and (max-width: $large) {
+					margin-bottom: 20px;
+					margin-right: 0px;
+					margin-left: 30px;
+				}
+				@media screen and (max-width: $medium) {
+					margin-right: 30px;
+					margin-left: 0px;
+				}
+				&:last-of-type {
+					margin-right: 0px;
+				}
+				img {
+					max-width: none;
+				}
+			}
+		}
+		.legal {
+			margin-top: 50px;
+
+			@media screen and (max-width: $medium) {
+				margin-top: 0px;
+				padding: 0px;
+			}
+			p {
+				margin-bottom: 0px;
+
+				&.agencies {
+					margin-bottom: 50px;
+
+					@media screen and (max-width: $medium) {
+						margin-bottom: 40px;
+					}
+					@media screen and (max-width: $small) {
+						margin-bottom: 20px;
+						width: 100%;
+						max-width: 200px;
+					}
+					a {
+						font-weight: bold;
+					}
+				}
+			}
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

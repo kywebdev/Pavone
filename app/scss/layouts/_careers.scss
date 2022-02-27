@@ -1,0 +1,170 @@
+.careers {
+	.hero {
+		height: 70vh;
+		min-height: 650px;
+
+		@media screen and (max-width: $medium) {
+			overflow: hidden;
+		}
+		@media screen and (max-width: $small) {
+			overflow: visible;
+			height: 500px;
+			min-height: auto;
+		}
+		&__text {
+			&__line2 {
+				margin-top: -8.333vw;
+
+				@media screen and (max-width: $medium) {
+					margin-top: 0px;
+				}
+				.btn-circle {
+					letter-spacing: 1px;
+					font-size: 13px;
+					line-height: 17px;
+				}
+			}
+		}
+		.btn-circle {
+			@media screen and (max-width: $small) {
+				width: 112px;
+				height: 112px;
+			}
+		}
+		.line {
+			height: 280px;
+			position: relative;
+			z-index: 3;
+
+			@media screen and (max-width: $medium) {
+				left: 96%;
+			}
+			@media screen and (max-width: $small) {
+				left: 50%;
+				height: 190px;
+			}
+		}
+	}
+	.careers-content {
+		padding-top: 130px;
+
+		@media screen and (max-width: $medium) {
+			padding-top: 100px;
+		}
+	}
+}
+.careers-heading {
+	padding-bottom: 65px;
+	position: relative;
+    z-index: 10;
+
+	@media screen and (max-width: $medium) {
+		padding-bottom: 50px;
+	}
+	h5 {
+		margin-bottom: 0px;
+	}
+}
+.jobs {
+	padding-top: 65px;
+
+	@media screen and (max-width: $medium) {
+		padding-top: 50px;
+	}
+	.col-md-10 {
+		.row {
+			padding: 0px;
+		}
+	}
+	&__job-opening {
+		padding-right: 7.813vw;
+		padding-bottom: 150px;
+
+		@media screen and (max-width: $large) {
+			padding-bottom: 100px;
+		}
+		@media screen and (max-width: $medium) {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		&:nth-of-type(even) {
+			padding-left: 7.813vw;
+			padding-right: 0px;
+
+			@media screen and (max-width: $medium) {
+				padding-left: 0px;
+			}
+		}
+		&__job-title {
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $medium) {
+				margin-bottom: 20px;
+			}
+			span {
+				background-color: #FBD928;
+				padding: 7px 0.521vw 7px 3.125vw;
+				margin-left: -3.125vw;
+				margin-right: -0.521vw;
+
+				@media screen and (max-width: $small) {
+					padding: 7px 1.1vw 7px 4vw;
+					margin-left: -4vw;
+					margin-right: -1.1vw;
+				}
+			}
+		}
+		&__location {
+			color: rgba($black, .25);
+			margin-bottom: 20px;
+			display: block;
+		}
+		&__job-desc {
+			margin-bottom: 3.125vw;
+
+			@media screen and (max-width: $medium) {
+				margin-bottom: 5.556vw;
+			}
+			@media screen and (max-width: $small) {
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+.all-openings {
+	.row {
+		@media screen and (max-width: $medium) {
+			padding-right: 0%;
+		}
+	}
+	.col-md-10 {
+		padding-right: 0px;
+	}
+	&__bg {
+		background-color: $yellow;
+		padding: 6.771vw 10.417vw;
+
+		@media screen and (max-width: $medium) {
+			padding: 11.111vw 7.778vw;
+		}
+		@media screen and (max-width: $small) {
+			padding: 22.182vw 13.091vw 22.182vw 16.727vw;
+		}
+		h4 {
+			@media screen and (max-width: $small) {
+				margin-bottom: 7.273vw;
+			}
+		}
+		h5 {
+			margin-bottom: 0px;
+
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

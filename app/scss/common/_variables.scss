@@ -1,0 +1,32 @@
+// ----------------------  SITE COLORS  ----------------------
+
+$yellow: 		#FBD928;
+$black: 		#000000;
+$gray: 			#bfbfbf;
+$light-gray: 	#ededed;
+$white:         #ffffff;
+
+
+// ----------------------  BOX SHADOWS  ----------------------
+
+$shadow-sm: 	0px 2px 10px rgba($black, .3);
+$shadow-md: 	0px 5px 20px rgba($black, .3);
+$shadow-lg: 	0px 10px 30px rgba($black, .3);
+$shadow-xlg: 	0px 30px 60px rgba($black, .3);
+$shadow-xxlg: 	0px 6px 120px rgba($black, .3);
+
+
+// ----------------------  TYPEFACES  ----------------------
+
+// google fonts import
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+$inter:         'Inter', Arial, Helvetica, sans-serif;
+
+
+// ----------------------  BREAKPOINTS  ----------------------
+
+$x-large:   1500px;
+$large:     1200px;
+$medium:    900px;
+$small:     550px;

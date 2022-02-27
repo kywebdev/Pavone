@@ -1,0 +1,173 @@
+.work-page {
+	.hero {
+		@media screen and (max-width: $medium) {
+			overflow: hidden;
+		}
+		@media screen and (max-width: $small) {
+			overflow: visible;
+		}
+		&__text {
+			&__line2 {
+				.col-md-2 {
+					max-width: unset;
+				}
+				&__highlight {
+					h3 {
+						display: flex;
+
+						@media screen and (min-width: $small) {
+							padding: 20px 50px 20px 30px;
+						}
+						span, img {
+							display: inline-block;
+						}
+						img {
+							margin-left: 1.563vw;
+							width: 1.510vw;
+
+							@media screen and (max-width: $medium) {
+								margin-left: 2.563vw;
+								width: 2.510vw;
+							}
+							@media screen and (max-width: $medium) {
+								margin-left: 15px;
+								width: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.line {
+			height: 650px;
+			position: relative;
+			z-index: 3;
+
+			@media screen and (max-width: $medium) {
+				height: 100%;
+				left: 96%;
+			}
+			@media screen and (max-width: $small) {
+				left: 50%;
+			}
+		}
+	}
+	.work {
+		padding-top: 100px;
+
+		@media screen and (max-width: $medium) {
+			padding-top: 70px;
+		}
+		@media screen and (max-width: $small) {
+			padding-top: 50px;
+		}
+	}
+}
+#watchModal {
+	padding-right: 0px !important;
+
+	.modal-dialog {
+		max-width: none;
+		margin: 0px;
+
+		.modal-close {
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 3px;
+			font-weight: 800;
+			text-transform: uppercase;
+			height: 16px;
+			color: $white;
+			padding: 0px;
+			background-color: transparent;
+			border: none;
+			outline: none !important;
+			position: absolute;
+			top: 40px;
+			right: 5%;
+		}
+		.modal-content {
+			border: none;
+			border-radius: 0px;
+			background-color: $black;
+			min-height: 100vh;
+
+			.modal-header {
+				border-bottom: none;
+				padding: 50px;
+			}
+			.modal-body {
+				padding: 0px 0px 50px;
+				width: 90%;
+				margin: 0px auto;
+			}
+		}
+	}
+}
+.work-heading {
+	padding-bottom: 100px;
+	position: relative;
+    z-index: 10;
+
+	@media screen and (max-width: $medium) {
+		padding-bottom: 70px;
+	}
+	@media screen and (max-width: $small) {
+		padding-bottom: 50px;
+	}
+	.col-md-10 {
+		display: flex;
+		justify-content: space-between;
+
+		h5 {
+			@media screen and (max-width: $small) {
+				font-size: 18px;
+				line-height: 24px;
+				letter-spacing: -0.5px;
+			}
+			br {
+				display: none;
+	
+				@media screen and (max-width: $small) {
+					display: block;
+				}
+			}
+		}
+		.dropdown {
+			@media screen and (max-width: $small) {
+				align-self: center;
+    			justify-content: flex-end;
+			}
+			button {
+				background-color: transparent;
+				border: none;
+				outline: none !important;
+				padding: 0px;
+				color: $gray;
+
+				&:after {
+					display: none;
+				}
+			}
+			.dropdown-menu {
+				border: 1px solid $gray;
+				border-radius: 0px;
+			}
+			.dropdown-item {
+				padding: 0.25rem 1rem;
+				color: rgba($black, .8);
+				font-size: 14px;
+				font-weight: 800;
+				line-height: 18px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				transition: .2s ease-in-out;
+
+				&:hover, &:active, &:focus, &.mixitup-control-active {
+					background-color: rgba($yellow, .8);
+					color: rgba($black, .8);
+				}
+			}
+		}
+	}
+}

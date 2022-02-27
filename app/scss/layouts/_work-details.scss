@@ -1,0 +1,480 @@
+.work-details {
+	min-height: auto;
+
+	.hero {
+		h1 {
+			margin-bottom: 6vw;
+
+			@media screen and (max-width: $medium) {
+				margin-bottom: 12vw;
+			}
+			@media screen and (max-width: $small) {
+				margin-bottom: 80px;
+			}
+		}
+		&__img {
+			width: 100%;
+			height: calc(100vh + 11px);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top center;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				margin-top: -9px;
+			}
+		}
+		&__text {
+			height: auto;
+			position: relative;
+			z-index: 4;
+
+			&__line1 {
+				&__back {
+					display: flex;
+					justify-content: center;
+					align-self: center;
+					margin-top: -6vw;
+		
+					@media screen and (max-width: $medium) {
+						margin-top: -12vw;
+					}
+					@media screen and (max-width: $small) {
+						display: none;
+					}
+					a {
+						transform: scale(1);
+						transition: .1s ease-in-out;
+		
+						&:hover {
+							transform: scale(1.15);
+						}
+					}
+				}
+				.col-md-10 {
+					@media screen and (max-width: $small) {
+						padding-left: 0px;
+						padding-right: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+.case-study-overview {
+	position: relative;
+	z-index: 4;
+
+	.section-label {
+		top: -90px;
+		
+		@media screen and (max-width: $small) {
+			top: -40px;
+		}
+		&__text {
+			color: $white;
+			width: 180px;
+
+			@media screen and (max-width: $medium) {
+				width: 140px;
+			}
+		}
+		&__line {
+			background-color: $white;
+			width: 600px;
+		}
+	}
+	>.row {
+		@media screen and (max-width: $medium) {
+			padding-right: 0;
+		}
+	}
+	.overview {
+		background-color: $yellow;
+		padding: 100px 0px;
+		margin-bottom: 300px;
+
+		@media screen and (max-width: $medium) {
+			padding: 50px 0 150px;
+			margin-bottom: 180px;
+		}
+		.row {
+			@media screen and (max-width: $medium) {
+				padding: 0;
+			}
+		}
+		&__intro {
+			@media screen and (max-width: $medium) {
+				margin-bottom: 80px;
+			}
+			@media screen and (max-width: $medium) {
+				padding: 0px 60px 0px 40px;
+			}
+			&__abbrev {
+				display: block;
+				color: $white;
+				margin-bottom: 60px;
+				
+				@media screen and (max-width: $medium) {
+					margin-bottom: 30px;
+					font-size: 16px;
+					letter-spacing: 2.25px;
+				}
+			}
+			&__title {
+				margin-bottom: 60px;
+
+				@media screen and (max-width: $medium) {
+					margin-bottom: 30px;
+				}
+			}
+			&__desc {
+				margin-bottom: 40px;
+			}
+			&__watch {
+				font-size: 18px;
+				line-height: 30px;
+				letter-spacing: -.2px;
+				font-weight: 500;
+				text-decoration: underline;
+
+				@media screen and (max-width: $medium) {
+					font-size: 16px;
+					line-height: 28px;
+				}
+				&:hover {
+					img {
+						transform: scale(1.2);
+					}
+				}
+				img {
+					width: 16px;
+					margin-left: 15px;
+					position: relative;
+					top: -1px;
+					transform: scale(1);
+					transition: .2s ease-in-out;
+
+					@media screen and (max-width: $medium) {
+						width: 12px;
+					}
+				}
+			}
+		}
+		&__capabilities {
+			@media screen and (max-width: $medium) {
+				padding: 0 40px;
+			}
+			&__used {
+				display: block;
+				color: $white;
+				margin-bottom: 60px;
+
+				@media screen and (max-width: $medium) {
+					margin-bottom: 30px;
+					font-size: 16px;
+					letter-spacing: 2.25px;
+				}
+			}
+			&__list {
+				margin: 0px;
+				padding: 0px;
+
+				li {
+					list-style-type: none;
+				}
+			}
+		}
+		&__video {
+			margin-top: 80px;
+			margin-bottom: -300px;
+			padding-right: 0px;
+
+			@media screen and (max-width: $medium) {
+				padding-left: 40px;
+			}
+			.video {
+				box-shadow: $shadow-xlg;
+				
+				@media screen and (max-width: $small) {
+					box-shadow: $shadow-sm;
+				}
+				@media screen and (max-width: $small) {
+					@include aspect-ratio(16, 9);
+				}
+			}
+			.overview__img {
+				img {
+					width: 100%;
+					box-shadow: $shadow-xlg;
+
+					@media screen and (max-width: $medium) {
+						box-shadow: $shadow-lg;
+					}
+					@media screen and (max-width: $small) {
+						box-shadow: $shadow-md;
+					}
+				}
+			}
+		}
+	}
+}
+.executions {
+	padding: 120px 0px;
+
+	@media screen and (max-width: $medium) {
+		padding: 130px 0px 80px;
+	}
+	@media screen and (max-width: $small) {
+		padding: 60px 0px;
+	}
+	.section-label {
+		top: -120px;
+
+		@media screen and (max-width: $medium) {
+			top: -80px;
+		}
+		@media screen and (max-width: $small) {
+			top: -20px;
+		}
+	}
+	h3 {
+		margin-bottom: 200px;
+
+		@media screen and (max-width: $medium) {
+			margin-bottom: 150px;
+		}
+		@media screen and (max-width: $small) {
+			margin-bottom: 100px;
+		}
+		span {
+			background-color: $yellow;
+			padding: 7px 4.948vw 7px 0.521vw;
+			margin-left: -0.521vw;
+
+			@media screen and (max-width: $small) {
+				padding: 7px 25px 7px 10px;
+				margin-left: 0;
+			}
+		}
+	}
+	&__feature-img {
+		margin-bottom: 120px;
+
+		@media screen and (max-width: $medium) {
+			margin-bottom: 80px;
+		}
+		@media screen and (max-width: $small) {
+			margin-bottom: 60px;
+		}
+		img {
+			width: 100%;
+			box-shadow: $shadow-xlg;
+
+			@media screen and (max-width: $medium) {
+				box-shadow: $shadow-lg;
+			}
+			@media screen and (max-width: $small) {
+				box-shadow: $shadow-md;
+			}
+		}
+	}
+	&__video {
+		margin-bottom: 120px;
+		box-shadow: $shadow-xlg;
+
+		@media screen and (max-width: $medium) {
+			margin-bottom: 80px;
+			box-shadow: $shadow-lg;
+		}
+		@media screen and (max-width: $small) {
+			margin-bottom: 60px;
+			box-shadow: $shadow-md;
+		}
+		img {
+			width: 100%;				
+		}
+		.video {
+			@media screen and (max-width: $small) {
+				@include aspect-ratio(16, 9);
+			}
+		}
+	}
+	&__slider {
+		padding-bottom: 200px;
+
+		@media screen and (max-width: $medium) {
+			padding-bottom: 120px;
+			padding-left: 0px;
+		}
+		@media screen and (max-width: $small) {
+			padding-bottom: 80px;
+		}
+		.col-md-11 {
+			padding-left: 0px;
+		}
+		&__container {
+			box-shadow: $shadow-xlg;
+
+			@media screen and (max-width: $medium) {
+				box-shadow: $shadow-lg;
+			}
+			@media screen and (max-width: $small) {
+				box-shadow: $shadow-md;
+			}
+		}
+		img {
+			width: 100%;
+
+			&.slick-prev {
+				width: 30px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 30px;
+				z-index: 2;
+				cursor: pointer;
+
+				@media screen and (max-width: $medium) {
+					width: 20px;
+					left: 20px;
+				}
+				@media screen and (max-width: $small) {
+					width: 15px;
+					left: 15px;
+				}
+			}
+			&.slick-next {
+				width: 30px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 30px;
+				z-index: 2;
+				cursor: pointer;
+
+				@media screen and (max-width: $medium) {
+					width: 20px;
+					right: 20px;
+				}
+				@media screen and (max-width: $small) {
+					width: 15px;
+					right: 15px;
+				}
+			}
+		}
+		.video {
+			@media screen and (max-width: $small) {
+				@include aspect-ratio(16, 9);
+			}
+		}
+		.slick-dots {
+			padding: 0px;
+			margin: 0px;
+			position: absolute;
+			bottom: -80px;
+			right: -6px;
+
+			@media screen and (max-width: $medium) {
+				bottom: -60px;
+			}
+			@media screen and (max-width: $small) {
+				bottom: -40px;
+			}
+
+			li {
+				list-style-type: none;
+				display: inline-block;
+
+				button {
+					background-color: transparent;
+					border: none;
+					font-size: 0px;
+					width: 20px;
+					height: 20px;
+					position: relative;
+					transition: .4s ease-in-out;
+
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						background-color: rgba($black, .25);
+						width: 4px;
+						height: 4px;
+						border-radius: 2px;
+						transition: .4s ease-in-out;
+					}
+				}
+				&.slick-active {
+					button {
+						outline: none;
+
+						&:after {
+							background-color: $black;
+							width: 8px;
+							height: 8px;
+							border-radius: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cta-label {
+		color: $gray;
+
+		&:after {
+			background-color: $gray;
+		}
+	}
+
+	.healthcare_block {
+		text-align: left !important;
+		margin-bottom: 4vw;
+
+	}
+
+
+	.healthcare_block h3 {
+		margin-top: 100px;
+		margin-bottom: 4vw;
+		font-size: 3vw;
+
+		@media screen and (max-width: $medium) {
+			font-size: 5vw;
+
+		}
+		@media screen and (max-width: $small) {
+			font-size: 9vw;
+			margin-bottom: 15vw;
+		}
+	}
+
+	.healthcare_block p {
+		font-size: 2vw;
+		line-height: 2.750vw;
+		letter-spacing: -0.052vw;
+		margin-bottom: 3vw;
+
+		@media screen and (max-width: $medium) {
+			font-size: 3vw;
+    		line-height: 6vw;
+		}
+		@media screen and (max-width: $small) {
+			font-size: 5.5vw;
+			line-height: 11vw;
+			margin-bottom: 15vw;
+		}
+	}
+
+}

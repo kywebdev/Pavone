@@ -1,0 +1,117 @@
+.error404 {
+	background-color: $yellow;
+
+	header {
+		.logo {
+			p {
+				color: $black;
+			}
+			.bulldog {
+				@media screen and (max-width: $small) {
+					background-image: url('../img/bulldog.svg');
+				}
+			}
+		}
+		.nav-open {
+			display: none;
+		}
+	}
+	main {
+		padding-top: 320px;
+		padding-bottom: 30px;
+		text-align: center;
+		width: 90%;
+		margin: 0px auto;
+
+		@media screen and (max-width: $medium) {
+			padding-top: 250px;
+		}
+		@media screen and (max-width: $small) {
+			padding-top: 150px;
+		}
+		h1 {
+			font-size: 350px;
+			font-weight: 500;
+			margin-bottom: 0px;
+
+			@media screen and (max-width: $medium) {
+				font-size: 150px;
+				margin-bottom: 30px;
+			}
+			@media screen and (max-width: 365px) {
+				font-size: 120px;
+				margin-bottom: 20px;
+			}
+			.alert-octagon {
+				position: relative;
+				top: -30px;
+				display: inline-block;
+				margin: 0px 20px;
+
+				@media screen and (max-width: $medium) {
+					top: -13px;
+					margin: 0px 10px;
+				}
+				@media screen and (max-width: 365px) {
+					top: -11px;
+					margin: 0px 5px;
+				}
+				img {
+					@media screen and (max-width: $medium) {
+						width: 113px;
+					}
+					@media screen and (max-width: 365px) {
+						width: 90px;
+					}
+				}
+			}
+		}
+		h4 {
+			margin-bottom: 25px;
+			font-size: 48px;
+			line-height: 60px;
+			letter-spacing: -.6px;
+
+			@media screen and (max-width: $medium) {
+				font-size: 40px;
+				line-height: 52px;
+				letter-spacing: -.6px;
+			}
+			@media screen and (max-width: $small) {
+				font-size: 36px;
+				line-height: 48px;
+				letter-spacing: -1px;
+			}
+		}
+		p {
+			margin-bottom: 35px;
+		}
+		.error-social {
+			margin-top: 45px;
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: center;
+
+			@media screen and (max-width: $small) {
+				align-self: flex-end;
+			}
+			a {
+				display: block;
+				margin-right: 30px;
+				transform: scale(1);
+				transition: .2s ease-in-out;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+				&:last-of-type {
+					margin-right: 0px;
+				}
+			}
+		}
+		.btn-circle {
+			margin: 0px auto;
+			background-color: $white;
+		}
+	}
+}
